@@ -1,0 +1,14 @@
+<section>
+  <h1>Мониторинг</h1>
+  @for (item of serversData; track $index){
+    <div class="card-server">
+      <div class="info">
+        <h3>{{item.name}}</h3>
+        <span>{{item.progress}} из {{ item.total }}</span>
+      </div>
+      <app-progress-bar [progress]="item.progress"></app-progress-bar>
+    </div>
+  }
+
+
+</section>

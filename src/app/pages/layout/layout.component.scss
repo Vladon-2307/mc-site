@@ -1,0 +1,17 @@
+section {
+  @apply h-full bg-no-repeat bg-cover bg-center pb-10;
+  background-image: url("../../../../public/kubercraft-fon.jpg");
+}
+
+
+main{
+  @apply grid max-w-[1100px] mx-auto mt-5 grid-cols-3 gap-5;
+}
+
+.left{
+  @apply col-span-2 bg-gray-600/65 py-5 rounded-lg px-2.5;
+}
+
+.right{
+  @apply flex flex-col gap-5;
+}

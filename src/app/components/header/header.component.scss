@@ -1,19 +1,26 @@
-header{
-  @apply flex justify-between bg-white/30 px-5 py-3 items-center;
+
+
+header {
+  @apply flex flex-col items-center;
 }
 
-.logo{
-  @apply font-semibold text-xl;
+
+
+.nav-menu {
+  @apply flex max-w-[1100px] w-full bg-gray-500/65 rounded-tl-lg rounded-br-lg;
 }
 
-.btn{
-  @apply flex gap-2.5 text-gray-800 font-bold;
-}
+.nav-menu_item{
+  @apply w-full text-center font-medium text-gray-200 cursor-pointer px-5 py-2;
+  font-size: 20px;
+  line-height: 20px;
 
-.download{
-  @apply mr-2.5 flex gap-2.5 items-center bg-green-500 px-2 py-1 font-medium rounded text-gray-200;
+  &:hover{
+    @apply bg-cyan-600 rounded-tl-lg rounded-br-lg;
+    box-shadow: 4px -2px 4px rgba(8, 145, 178, 0.8);
+  }
 }
 
 .active{
-  @apply underline;
+  @apply border-b-sky-600;
 }

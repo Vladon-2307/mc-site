@@ -1,0 +1,15 @@
+section{
+  @apply w-full px-2.5 bg-gray-600/65 py-5 rounded-tl-lg rounded-br-lg;
+}
+
+h1{
+  @apply font-extrabold text-2xl mb-5 text-gray-200;
+}
+
+.card-server{
+  @apply mb-2.5;
+}
+
+.info{
+  @apply flex justify-between text-gray-200 font-medium
+}

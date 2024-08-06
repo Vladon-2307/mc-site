@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterLinkActive} from "@angular/router";
-import {LucideAngularModule} from "lucide-angular";
+import {RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [
-    RouterLink,
-    LucideAngularModule,
-    RouterLinkActive
-  ],
+    imports: [
+        RouterLinkActive
+    ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
