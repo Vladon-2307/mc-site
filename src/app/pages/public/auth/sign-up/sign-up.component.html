@@ -15,6 +15,6 @@
     <span class="error">{{passwordReplayError()}}</span>
   </div>
 
-  <button [disabled]="!signUpForm.valid" type="submit">зарегестрироваться</button>
+  <button [disabled]="!signUpForm.valid || passwordReplayError()" type="submit">зарегестрироваться</button>
 
 </form>
