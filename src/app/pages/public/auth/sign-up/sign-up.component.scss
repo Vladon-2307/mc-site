@@ -1,0 +1,41 @@
+form{
+  @apply w-[300px] my-8 mx-auto flex flex-col gap-5 items-center p-5 rounded bg-gray-100/80;
+}
+
+h1{
+  @apply font-bold text-xl;
+}
+
+input{
+  @apply w-[260px] h-[24px] bg-transparent px-1.5 py-1 border-b border-b-black;
+
+  &:focus{
+    @apply outline-none;
+  }
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+  display: none;
+}
+
+.error{
+  @apply text-sm text-red-700;
+}
+
+button{
+  @apply mr-2.5 flex gap-2.5 w-full justify-center bg-green-500 px-2 py-1 font-medium rounded text-gray-200;
+
+  &:disabled{
+    @apply bg-gray-500;
+  }
+}
+
+.password{
+  @apply relative;
+}
+
+.password-icon{
+  @apply absolute left-[230px];
+}
