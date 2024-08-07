@@ -5,6 +5,7 @@ import {HomeComponent} from "./pages/home/home.component";
 import {RulesComponent} from "./pages/rules/rules.component";
 import {BanListComponent} from "./pages/ban-list/ban-list.component";
 import {SignUpComponent} from "./auth/sign-up/sign-up.component";
+import {publicGuard} from "./guards/public.guard";
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
       {
         path: 'sign-up',
         component: SignUpComponent,
+        canActivate: [publicGuard]
       },
       {
         path: 'rules',

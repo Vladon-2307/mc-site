@@ -1,17 +1,22 @@
 <section>
   <app-header></app-header>
-  <div class="alt-auth">
-    <button class="alt-auth_btn" (click)="authVisible = !authVisible">Авторизоваться</button>
-    @if (authVisible){
-      <app-sign-in></app-sign-in>
-    }
-  </div>
+  @if (!authService.isAuth()){
+    <div class="alt-auth">
+      <button class="alt-auth_btn" (click)="authVisible = !authVisible">Авторизоваться</button>
+      @if (authVisible){
+        <app-sign-in></app-sign-in>
+      }
+    </div>
+  }
   <main>
     <div class="left">
       <router-outlet></router-outlet>
     </div>
     <div class="right">
-      <app-sign-in></app-sign-in>
+      @if (!authService.isAuth()){
+        <app-sign-in></app-sign-in>
+      }
+
       <app-monitoring></app-monitoring>
     </div>
   </main>

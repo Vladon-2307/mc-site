@@ -3,6 +3,7 @@ import {RouterLinkActive, RouterOutlet} from "@angular/router";
 import {SignInComponent} from "../auth/sign-in/sign-in.component";
 import {HeaderComponent} from "../components/header/header.component";
 import {MonitoringComponent} from "../components/monitoring/monitoring.component";
+import {AuthService} from "../services/auth.service";
 
 @Component({
   selector: 'app-layout',
@@ -20,5 +21,8 @@ import {MonitoringComponent} from "../components/monitoring/monitoring.component
 export class LayoutComponent {
 
   authVisible = false
+
+  constructor(readonly authService: AuthService) {
+  }
 
 }

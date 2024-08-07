@@ -5,7 +5,7 @@
   @for (i of banList; track $index){
     <div class="ban-card">
       <p>
-        <span>{{i.banNik}}</span> забанил <span>{{i.banedNik}}</span>
+        <span>{{i.banedNik}}</span> забанил <span>{{i.banNik}}</span>
       </p>
       <p>с <span>{{i.ban | date: 'dd.MM.yyyy-HH:mm'}}</span> по <span>{{i.unban | date: 'dd.MM.yyyy-HH:mm'}}</span></p>
       <p>по причине: <span>{{i.reason}}</span></p>

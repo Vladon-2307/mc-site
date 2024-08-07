@@ -1,11 +1,17 @@
-<form>
+<form [formGroup]="signInForm" (submit)="submit()">
   <h1>Авторизация</h1>
   <div class="inputs">
-    <input type="text" placeholder="логин">
-    <input type="password" placeholder="пароль">
+    <input type="text" placeholder="логин" formControlName="login">
+      <span class="error">
+        {{loginError()}}
+      </span>
+    <input type="password" placeholder="пароль" formControlName="pass">
+    <span class="error">
+        {{passwordError()}}
+      </span>
   </div>
 
-  <button class="login">войти в акаунт</button>
+  <button [disabled]="!signInForm.valid" type="submit" class="login">войти в акаунт</button>
   <div class="buttons">
     <a class="btn">Забыли пароль?</a>
     <a class="btn" routerLink="/sign-up">Зарегестрироваться</a>

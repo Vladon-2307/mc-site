@@ -1,10 +1,23 @@
-<form>
+<form [formGroup]="signUpForm" (submit)="submit()">
   <h1>Регистрация</h1>
   <div class="inputs">
-    <input type="text" placeholder="логин">
-    <input type="email" placeholder="почта">
-    <input type="password" placeholder="пароль">
+    <input type="text" placeholder="логин" formControlName="login">
+    <span class="error">
+      {{loginError()}}
+    </span>
+    <input type="email" placeholder="почта" formControlName="email">
+    <span class="error">
+      {{emailError()}}
+    </span>
+    <input type="password" placeholder="пароль" formControlName="pass">
+    <span class="error">
+      {{passwordError()}}
+    </span>
+    <input type="password" placeholder="повторите пароль" formControlName="confirm_pass">
+    <span class="error">
+      {{confirmPasswordError()}}
+    </span>
   </div>
 
-  <button class="btn">зарегестрироватся</button>
+  <button [disabled]="!signUpForm.valid || !!confirmPasswordError()" type="submit" class="btn">зарегестрироватся</button>
 </form>
