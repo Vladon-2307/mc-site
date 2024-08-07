@@ -10,7 +10,7 @@ import {NgOptimizedImage} from "@angular/common";
 @NgModule({
   declarations: [
     AppComponent,
-    BackgroundComponent
+    BackgroundComponent,
   ],
     imports: [
         BrowserModule,

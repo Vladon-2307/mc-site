@@ -4,6 +4,7 @@ import {LayoutComponent} from "./layout/layout.component";
 import {HomeComponent} from "./pages/home/home.component";
 import {RulesComponent} from "./pages/rules/rules.component";
 import {BanListComponent} from "./pages/ban-list/ban-list.component";
+import {SignUpComponent} from "./auth/sign-up/sign-up.component";
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
       {
         path: '',
         component: HomeComponent,
+      },
+      {
+        path: 'sign-up',
+        component: SignUpComponent,
       },
       {
         path: 'rules',
