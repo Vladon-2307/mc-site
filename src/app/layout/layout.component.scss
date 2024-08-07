@@ -1,5 +1,7 @@
 section {
   @apply pb-10 px-2.5;
+  height: 100svh;
+  overflow-y: scroll;
 }
 
 
@@ -37,10 +39,4 @@ main{
   @apply mb-2.5 w-full text-center bg-sky-900 rounded-tl-lg rounded-br-lg py-2.5 mt-5 text-xl font-semibold text-gray-200;
 }
 
-@at-root {
-  body{
-    @apply min-h-full bg-no-repeat bg-cover bg-center;
-    background-image: url("../../../public/kubercraft-fon.jpg");
-  }
-}
 
