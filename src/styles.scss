@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 
-html, body{
+html{
   min-height: 100vh;
 }
 
 body{
-  @apply min-h-full bg-no-repeat bg-cover bg-center;
-  background-image: url("../public/kubercraft-fon.jpg");
+  min-height: 100vh;
+  //@apply min-h-full bg-no-repeat bg-cover bg-center;
+  //background-image: url("../public/kubercraft-fon.jpg");
 }

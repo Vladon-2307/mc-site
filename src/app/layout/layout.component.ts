@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import {RouterLinkActive, RouterOutlet} from "@angular/router";
-import {SignInComponent} from "../../auth/sign-in/sign-in.component";
-import {HeaderComponent} from "../../components/header/header.component";
-import {MonitoringComponent} from "../../components/monitoring/monitoring.component";
+import {SignInComponent} from "../auth/sign-in/sign-in.component";
+import {HeaderComponent} from "../components/header/header.component";
+import {MonitoringComponent} from "../components/monitoring/monitoring.component";
 
 @Component({
   selector: 'app-layout',

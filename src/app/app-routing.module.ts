@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import {LayoutComponent} from "./pages/layout/layout.component";
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {LayoutComponent} from "./layout/layout.component";
 import {HomeComponent} from "./pages/home/home.component";
 import {RulesComponent} from "./pages/rules/rules.component";
+import {BanListComponent} from "./pages/ban-list/ban-list.component";
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'rules',
         component: RulesComponent,
+      },
+      {
+        path: 'ban-list',
+        component: BanListComponent,
       }
     ]
   }
@@ -25,4 +30,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
