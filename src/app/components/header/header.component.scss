@@ -1,26 +1,37 @@
 
-
 header {
   @apply flex flex-col items-center;
 }
-
 
 
 .nav-menu {
   @apply flex max-w-[1100px] w-full bg-gray-500/65 rounded-tl-lg rounded-br-lg;
 }
 
-.nav-menu_item{
+.nav-menu_item {
   @apply w-full text-center font-medium text-gray-200 cursor-pointer px-5 py-2;
   font-size: 20px;
   line-height: 20px;
 
-  &:hover{
-    @apply bg-cyan-600 rounded-tl-lg rounded-br-lg;
-    box-shadow: 4px -2px 4px rgba(8, 145, 178, 0.8);
+  @media (max-width: 700px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (max-width: 560px) {
+    @apply px-1 py-1;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      @apply bg-cyan-600 rounded-tl-lg rounded-br-lg;
+      box-shadow: 4px -2px 4px rgba(8, 145, 178, 0.8);
+    }
   }
 }
 
-.active{
-  @apply border-b-sky-600;
+.active {
+  @apply border-b-2 border-b-sky-600;
 }

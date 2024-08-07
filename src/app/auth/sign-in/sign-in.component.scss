@@ -1,36 +1,42 @@
-form{
+form {
   @apply w-full px-2.5 bg-gray-600/65 py-5 rounded-tl-lg rounded-br-lg;
 
 }
 
-h1{
+h1 {
   @apply font-extrabold text-xl text-center mb-5 text-gray-200;
 }
 
-.inputs{
+.inputs {
   @apply flex flex-col gap-2.5
 }
 
-input{
+input {
   @apply text-center w-full bg-gray-800 py-3 rounded;
 
-  &:focus{
+  &:focus {
     @apply outline-none;
   }
 }
 
-.login{
+.login {
   @apply w-full text-center bg-sky-900 rounded-tl-lg rounded-br-lg py-2.5 mt-5 text-xl font-semibold text-gray-200;
 }
 
-.buttons{
+.buttons {
   @apply flex justify-between items-center mt-5 px-2.5;
+
+  @media (max-width: 900px) {
+    @apply flex-col;
+  }
 }
 
-.btn{
+.btn {
   @apply text-base font-semibold text-gray-200 underline cursor-pointer;
 
-  &:hover{
-    @apply no-underline;
+  @media (hover: hover) {
+    &:hover {
+      @apply no-underline;
+    }
   }
 }

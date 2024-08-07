@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLinkActive, RouterOutlet} from "@angular/router";
-import {SignInComponent} from "../auth/sign-in/sign-in.component";
+import {SignInComponent} from "../../auth/sign-in/sign-in.component";
 import {HeaderComponent} from "../../components/header/header.component";
 import {MonitoringComponent} from "../../components/monitoring/monitoring.component";
 
@@ -18,5 +18,7 @@ import {MonitoringComponent} from "../../components/monitoring/monitoring.compon
   styleUrl: './layout.component.scss'
 })
 export class LayoutComponent {
+
+  authVisible = false
 
 }

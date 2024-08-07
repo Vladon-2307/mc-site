@@ -1,8 +1,8 @@
 <header>
   <img src="kubercraft-06-08-2024.png" height="207" width="1024" alt="logo"/>
   <menu class="nav-menu">
-    <a routerLinkActive="active" class="nav-menu_item">главная</a>
-    <a routerLinkActive="active" class="nav-menu_item">правила</a>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-menu_item">главная</a>
+    <a routerLink="/rules" routerLinkActive="active" class="nav-menu_item">правила</a>
     <a routerLinkActive="active" class="nav-menu_item">донат</a>
     <a routerLinkActive="active" class="nav-menu_item">сервера</a>
     <a routerLinkActive="active" class="nav-menu_item">бан-лист</a>

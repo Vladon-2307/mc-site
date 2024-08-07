@@ -6,3 +6,8 @@
 html, body{
   min-height: 100vh;
 }
+
+body{
+  @apply min-h-full bg-no-repeat bg-cover bg-center;
+  background-image: url("../public/kubercraft-fon.jpg");
+}

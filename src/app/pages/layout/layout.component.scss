@@ -1,11 +1,14 @@
 section {
-  @apply h-full bg-no-repeat bg-cover bg-center pb-10;
-  background-image: url("../../../../public/kubercraft-fon.jpg");
+  @apply pb-10 px-2.5;
 }
 
 
 main{
   @apply grid max-w-[1100px] mx-auto mt-5 grid-cols-3 gap-5;
+}
+
+.alt-auth{
+  @apply hidden;
 }
 
 .left{
@@ -14,4 +17,22 @@ main{
 
 .right{
   @apply flex flex-col gap-5;
+}
+
+@media (max-width: 580px) {
+  .right {
+    @apply hidden;
+  }
+
+  .left{
+    @apply col-span-3 ;
+  }
+
+  .alt-auth{
+    @apply block;
+  }
+}
+
+.alt-auth_btn{
+  @apply mb-2.5 w-full text-center bg-sky-900 rounded-tl-lg rounded-br-lg py-2.5 mt-5 text-xl font-semibold text-gray-200;
 }
