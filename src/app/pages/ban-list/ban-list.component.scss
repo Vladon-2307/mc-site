@@ -1,5 +1,21 @@
-
+section{
+  @apply text-gray-200;
+}
 
 h1{
-  @apply text-4xl text-gray-200 py-2.5;
+  @apply text-4xl  py-2.5;
 }
+
+.ban-card{
+  @apply flex flex-col mb-2.5 border-b;
+}
+
+p{
+  @apply text-gray-300;
+}
+
+span{
+  @apply font-medium text-gray-200;
+}
+
+
