@@ -23,7 +23,7 @@ export class AuthService {
       res => {
         localStorage.setItem('access_token', res.access_token)
         console.log(this.jwt.decodeToken())
-        this.getUserData()
+        // this.getUserData()
       },
       err => {
         console.log(err)
