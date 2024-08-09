@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://kubercraft.ru/api",
+    "secure": true
+  }
+}
