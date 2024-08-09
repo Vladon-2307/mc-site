@@ -4,6 +4,7 @@ import {SignInComponent} from "../auth/sign-in/sign-in.component";
 import {HeaderComponent} from "../components/header/header.component";
 import {MonitoringComponent} from "../components/monitoring/monitoring.component";
 import {AuthService} from "../services/auth.service";
+import {UserCardComponent} from "../components/user-card/user-card.component";
 
 @Component({
   selector: 'app-layout',
@@ -13,7 +14,8 @@ import {AuthService} from "../services/auth.service";
     RouterLinkActive,
     SignInComponent,
     HeaderComponent,
-    MonitoringComponent
+    MonitoringComponent,
+    UserCardComponent
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'

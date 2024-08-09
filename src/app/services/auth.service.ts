@@ -44,10 +44,22 @@ export class AuthService {
 
   getUserData(){
     const tokenData = this.jwt.decodeToken()
+    const resp: {id: string, username: string, userLogo: any} = {
+      id: tokenData.sub,
+      username: tokenData.username,
+      userLogo: null
+    }
     this.http.get(`${environment.API_BACKEND}/${tokenData.sub}/icon.png`).subscribe(
       res=>{
-        console.log(res)
-      })
+        resp.userLogo = res
+
+      },
+      err => {
+        console.log(err)
+        resp.userLogo = 'icon.png'
+      }
+  )
+    return resp
   }
 
   logout() {

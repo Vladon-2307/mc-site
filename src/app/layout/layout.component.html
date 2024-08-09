@@ -8,6 +8,7 @@
       }
     </div>
   }
+  <app-user-card class="m-user"></app-user-card>
   <main>
     <div class="left">
       <router-outlet></router-outlet>
@@ -15,6 +16,8 @@
     <div class="right">
       @if (!authService.isAuth()){
         <app-sign-in></app-sign-in>
+      } @else {
+        <app-user-card></app-user-card>
       }
 
       <app-monitoring></app-monitoring>

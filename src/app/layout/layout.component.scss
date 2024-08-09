@@ -21,9 +21,17 @@ main{
   @apply flex flex-col gap-5;
 }
 
+.m-user{
+  @apply hidden;
+}
+
 @media (max-width: 580px) {
   .right {
     @apply hidden;
+  }
+
+  .m-user{
+    @apply block mt-5;
   }
 
   .left{
@@ -38,5 +46,7 @@ main{
 .alt-auth_btn{
   @apply mb-2.5 w-full text-center bg-sky-900 rounded-tl-lg rounded-br-lg py-2.5 mt-5 text-xl font-semibold text-gray-200;
 }
+
+
 
 

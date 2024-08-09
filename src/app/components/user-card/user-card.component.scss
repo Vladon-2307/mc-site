@@ -1,0 +1,26 @@
+section{
+  @apply w-full px-2.5 bg-gray-600/80 py-5 rounded-lg;
+}
+
+.user{
+  @apply flex gap-2.5 text-xl text-gray-200 items-center;
+}
+
+img{
+  @apply h-10 w-10 rounded-[50%];
+}
+
+
+.logout{
+  @apply w-full text-center bg-sky-900 rounded-tl-lg rounded-br-lg py-2.5 mt-5 text-xl font-semibold text-gray-200;
+}
+
+@media (max-width: 580px){
+  section {
+    @apply flex items-center justify-between;
+  }
+
+  .logout{
+    @apply w-min py-1 px-2 mt-0;
+  }
+}
