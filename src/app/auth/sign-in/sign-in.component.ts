@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {AuthService} from "../../services/auth.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-sign-in',
@@ -13,7 +14,7 @@ import {AuthService} from "../../services/auth.service";
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.scss'
 })
-export class SignInComponent {
+export class SignInComponent{
 
   signInForm = new FormGroup({
     login: new FormControl('', [Validators.required]),
